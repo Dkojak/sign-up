@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --sred: hsl(0, 67%, 47%) ;
+    --sblue: hsl(262, 100%, 50%);
+    --sgreen: hsl(110, 75%, 35%);
+    --sgrey: hsl(229, 20%, 89%);
+
+}
+
+
+.chase{
+    width: 5rem;
+    height: 2rem;
+    float: right;
+}
+.first{
+    display: grid;
+    grid-template-areas: 'one two three four';
+    height: 30rem;
+    
+}
+.first-one{
+    grid-area: one;
+    border-style: solid ;
+    border-color: var(--sred);
+}
+.first-two{
+    grid-area: two;
+    border-style: solid ;
+    border-color:  var(--sblue);
+}
+.first-three{
+    grid-area: three;
+    border-style: solid; 
+    border-color:  var(--sgreen);
+}
+.first-four{
+    grid-area: four;
+    border-style: solid;
+    border-color: var(--sgrey)
+}
+.chext{
+    text-align: center;
+}
