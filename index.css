@@ -8,17 +8,43 @@
     --sblue: hsl(262, 100%, 50%);
     --sgreen: hsl(110, 75%, 35%);
     --sgrey: hsl(229, 20%, 89%);
+    --ssylver: rgb(132, 122, 221);
+    --ssilver: silver;
+    --sbrown: rgb(75, 47, 47);
+    --swhite: hsla(120, 100%, 99%, 0.726);
 
 }
 
-
+body{
+    background-color: var(--ssilver);
+    font-family: cursive;
+    color: var(--swhite);
+}
+.hero{
+    margin: 1rem;
+}
+.nav-bar{
+    height: 4rem;
+    background-color: var(--ssylver);
+    /* border-radius: 50px; */
+}
+.logo{
+    width: 7rem;
+    height: 4rem;
+}
+.lojut{
+    max-width: 100%;
+}
 .chase{
     width: 5rem;
     height: 2rem;
     float: right;
+    margin: 1rem 1rem 0 0;
 }
 .first{
     display: grid;
+    width: auto-fit;
+    grid-gap: 0.5rem;
     grid-template-areas: 'one two three four';
     height: 30rem;
     
@@ -26,23 +52,90 @@
 .first-one{
     grid-area: one;
     border-style: solid ;
-    border-color: var(--sred);
+    /* border-color: var(--sred); */
+    background-image: url(./assets/images/Abstract\ Picture\ 1.jpg);
 }
 .first-two{
     grid-area: two;
     border-style: solid ;
-    border-color:  var(--sblue);
+    /* border-color:  var(--sblue); */
+    background-image: url(./assets/images/Abstract\ Picture\ 2.jpg) ;
 }
 .first-three{
     grid-area: three;
     border-style: solid; 
-    border-color:  var(--sgreen);
+    /* border-color:  var(--sgreen); */
+    background-image: url(./assets/images/Abstract\ Picture\ 3.jpg);
 }
 .first-four{
     grid-area: four;
     border-style: solid;
-    border-color: var(--sgrey)
+    /* border-color: var(--sgrey); */
+    background-image: url(./assets/images/Abstract\ Picture\ 4.jpg);
 }
 .chext{
     text-align: center;
+}
+.chext a{
+    text-decoration: none;
+    color: var(--ssilver);
+}
+.side-kick{
+   background-color: var(--sbrown);
+    height: 35rem;
+    text-align: center;
+}
+.tera{
+    text-align: center;
+    padding: 1rem;
+    font-size: clamp(20px, 2vh, 10%);
+    row-gap: 1rem;
+}
+#expo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.bvn{
+    height: 3rem;
+    width: auto 20rem;
+    border-radius: 1rem;
+    color: var(--swhite);
+    border-style: solid;
+    border-color: transparent;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+    color: var(--ssylver);
+}
+.blue{
+    background-color: blue;
+}
+.black{
+    background-color: black;
+}
+.brown{
+    background-color: var(--sbrown);
+}
+@media screen and (max-width: 992px) {
+    .first{
+        grid-template-areas: 'one one'
+                                          'two three'
+                                          'four four'
+        ;
+    }
+}
+@media screen and (max-width: 576px) {
+    .first{
+        grid-template-areas: 'one'
+                                          'two'
+                                          'three'
+                                          'four'
+        ;
+    }
+    
 }

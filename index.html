@@ -5,31 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dkojak</title>
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
     <div class="hero">
-        <nav class="nav-bar">
-            <div> <img src="" alt=""></div>
-            <button class="chase">login</button>
+        <nav id = "nav-bar"class="nav-bar">
+            <div class="logo"> <img class="lojut" src="./resources/images/Abstract Picture 5.svg" alt="">
+            <button class="chase" onclick= "changeBackgroundColor('red','nav-bar'); alert(a+b)">login</button>
+            </div>
 
         </nav>
         <div class="first">
             <div class="first-one">
-                <p class="chext"><a href="./interactive-rating-component-main/index.html">Signup-style1</a></p>
+                <p class="chext"><a href="./interactive-rating-component-main/index.html" target="_blank">Signup-style1</a></p>
 
             </div>
             <div class="first-two">
-                <p class="chext"><a href="./intro-component-with-signup-form-master/index.html">Signup-style2</a></p>
+                <p class="chext"><a href="./intro-component-with-signup-form-master/index.html" target="_blank">Signup-style2</a></p>
 
             </div>
             <div class="first-three">
-                <p class="chext"><a href="./newsletter-sign-up-with-success-message-main/">Signup-style3</a></p>
+                <p class="chext"><a href="./newsletter-sign-up-with-success-message-main/" target="_blank">Signup-style3</a></p>
 
             </div>
             <div class="first-four">
-                <p class="chext"><a href="./3-column-preview-card-component-main/index.html">Signup-style4</a></p>
+                <p class="chext"><a href="./3-column-preview-card-component-main/index.html" target="_blank">Signup-style4</a></p>
             </div>
         </div>
+        <br>
+        <div class='side-kick'>
+           <div id="expo">
+            <p><h1 class="tera">The Reason For This Section Will Be Shown At The Click Of A Button</h1></p>
+            <button class ="bvn red" onclick="changeBackgroundColor('red','expo')">Click This to have a red background</button>
+            <button class ="bvn yellow"onclick="changeBackgroundColor('yellow','expo')">Click This to have a yellow background</button>
+            <button class ="bvn blue"onclick="changeBackgroundColor('blue','expo')">Click This to have a blue background</button>
+            <button class ="bvn black"onclick="changeBackgroundColor('black','expo')">Click This to have a black background</button>
+            <button class ="bvn brown"onclick="changeBackgroundColor('var(--sbrown)','expo')">Click This to return the original background</button>
+           </div>
+           <p><h3>These are the wonders of javascipt</h3></p>
+        </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
